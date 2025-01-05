@@ -1,0 +1,17 @@
+/* Gradient background styles */
+.hero-gradient {
+  background: linear-gradient(to bottom, #000000, #330000);
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255, 0, 51, 0.2) 0%, rgba(0, 0, 0, 0.9) 70%);
+  z-index: 1;
+}

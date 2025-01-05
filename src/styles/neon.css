@@ -1,0 +1,34 @@
+@keyframes neonPulse {
+  0% { box-shadow: 0 0 5px #ff1e56, 0 0 10px #ff1e56, 0 0 20px #ff1e56; }
+  50% { box-shadow: 0 0 10px #ff1e56, 0 0 20px #ff1e56, 0 0 40px #ff1e56; }
+  100% { box-shadow: 0 0 5px #ff1e56, 0 0 10px #ff1e56, 0 0 20px #ff1e56; }
+}
+
+.neon-button {
+  background: #ff1e56;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  animation: neonPulse 2s infinite;
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+  background: #ff0044;
+  transform: translateY(-1px);
+}
+
+.neon-outline {
+  border: 2px solid #ff1e56;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.neon-outline:hover {
+  background: rgba(255, 30, 86, 0.1);
+  box-shadow: 0 0 20px rgba(255, 30, 86, 0.5);
+}
